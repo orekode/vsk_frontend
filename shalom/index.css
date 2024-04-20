@@ -1,0 +1,202 @@
+
+
+* {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+@font-face {
+    font-family: 'suiii';
+    src: url('./font.otf');
+}
+
+.vsk_root {
+    /* background: #f9f9ff; */
+    padding: 5rem;
+}
+
+.vsk_root .card-box_102 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.vsk_root .font-bold_102 {
+    font-family: 'suiii';
+}
+
+.vsk_root .img_cover_102 {
+    --size: 100%;
+    height: var(--size);
+    width: var(--size);
+    object-fit: cover;
+}
+
+.vsk_root .container_102 > .title_102 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.vsk_root .container_102 > .title_102 h1 {
+    font-weight: 600;
+    font-size: 250%;
+}
+
+.vsk_root .card_102 {
+    --size: 270px;
+    width: var(--size);
+    background: #fff;
+    box-shadow: 0 0 1px #bdbdbd58;
+    border: 1px solid #e1e1e15d;
+    border-radius: 10px;
+    padding: .5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.vsk_root .card_102:hover {
+    scale: 1.015;
+    box-shadow: 0 0 8px #bdbdbd58;
+}
+
+.vsk_root .card_102:active {
+    scale: 0.95;
+}
+
+.vsk_root .card_102 .btn_box_102 {
+    bottom: -200%;
+    left: 0;
+    width: 100%;
+    padding: .5rem;
+    position: absolute;
+}
+
+.vsk_root .card_102:hover .btn_box_102 {
+    bottom: 0;
+}
+
+.vsk_root .card_102 .btn_box_102 .btn_102 {
+    background: blue;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    font-size: 80%;
+    padding: 0.5rem 2rem;
+    text-align: center;
+}
+
+.vsk_root .card_102 .btn_box_102 .btn_102:active {
+    scale: 0.75;
+}
+
+.vsk_root .card_102 .image_102 {
+    /* --size: 230px; */
+    background: skyblue;
+    box-shadow: 0 0 8px #bdbdbd58;
+    border-radius: 10px;
+    height: calc(var(--size) - 50px);
+    width: 100%;
+    overflow: hidden;
+}
+
+.vsk_root .card_102 .content_102 > * {
+    margin: 0.25rem 0
+}
+
+.vsk_root .card_102 .content_102 .sub_title_102 {
+    color: lightgray;
+    font-size: 90%;
+    font-weight: bold;
+}
+
+.vsk_root .card_102 .content_102 .title_102 {
+    font-size: 135%;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.75px;
+}
+
+.vsk_root .card_102 .content_102 .summary_102 {
+    font-size: 80%;
+    font-weight: 400;
+    opacity: 0.6;
+    margin: 0.5rem 0;
+}
+
+.vsk_root .card_102 .content_102 .dates_102 {
+    font-weight: bold;
+    font-size: 70%;
+}
+
+.vsk_root .card_102 .content_102 .teacher_102 {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.vsk_root .card_102 .content_102 .teacher_102 .teacher_image_102 {
+    --size: 100px
+    height: var(--size);
+    width: var(--size);
+    border-radius: 10px;
+    box-shadow: 0 0 8px #bdbdbd58;
+}
+
+.vsk_root .dates_102 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.vsk_root .date_102 {
+    padding: 0.5rem;
+    border-radius: 10px;
+    background: rgba(255, 231, 209, 0.783);
+}
+
+.vsk_root .search_box_102 {
+    border: 1px solid;
+}
+
+.vsk_root .search-box_102 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.vsk_root select, .vsk_root input {
+    --size: 38px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 1px #bdbdbd58;
+    border: 1px solid #e1e1e15d;
+    height: var(--size);
+    padding: 0.45rem;
+    min-width: 150px;
+    outline: none;
+}
+
+
+.vsk_root select:focus, .vsk_root input:focus {
+    /* box-shadow: 0 0 5px #6c89ff5d; */
+    border: 2px solid #2853ff;
+}
+
+.vsk_root .icon_btn_102 {
+    --size: 38px;
+    height: var(--size);
+    width: var(--size);
+    border-radius: 10px;
+
+}
+
+
+.vsk_root .btn_102 {
+    outline: none;
+    border: none;
+}
