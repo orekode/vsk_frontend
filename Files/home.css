@@ -26,19 +26,19 @@
 }
 @font-face {
     font-family: 'churchward';
-    src: url('./Churchward69Bold.otf');
+    src: url('/Assets/Churchward69Bold.otf');
 }
 @font-face {
     font-family: 'Alphawood';
-    src: url('./DancingDonuts.ttf')
+    src: url('/Assets/DancingDonuts.ttf');
 }
 @font-face {
     font-family: 'Donut';
-    src: url('./Font_2.otf');
+    src: url('/Assets/Font_2.otf');
 }
 @font-face {
     font-family: 'bitcrusher';
-    src: url('./bitcrusher.ttf');
+    src: url('/Assets/bitcrusher.ttf');
 }
 *{
     margin: 0;
@@ -118,7 +118,7 @@ nav button{
     padding: var(--bottom-section-padding);
     font-size: var(--h2);
     font-family: 'churchward';
-    background: rgba(0,0,0,.7) url('./kids.avif') no-repeat top center/cover;
+    background: rgba(0,0,0,.7) url('/Assets/kids.avif') no-repeat top center/cover;
     background-blend-mode: darken;
 }
 .vsk_root .header_102 .header_first_102{
