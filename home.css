@@ -16,7 +16,7 @@
 
     /*Padding variables */
     --bottom-section-padding: 8rem;
-    --bottom-section-padding-mobile: 8rem;
+    --bottom-section-padding-mobile: 5rem;
 
     /*Container width for all */
     --container-width: 84%;
@@ -92,14 +92,16 @@ section{
     z-index: 2;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-
+}
+nav button{
+    display: none;
 }
 .vsk_root .nav-container_102{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.vsk_root .nav_items{
+.vsk_root .nav_items_102{
     display: flex;
     gap: 4rem;
 }
@@ -116,19 +118,8 @@ section{
     padding: var(--bottom-section-padding);
     font-size: var(--h2);
     font-family: 'churchward';
-    background: url('./try1.avif') no-repeat top center/cover;
-    background-color: rgba(255, 255, 255, 0.5); 
-}
-.vsk_root .header_102::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(10px);
-    z-index: -1;
+    background: rgba(0,0,0,.7) url('./kids.avif') no-repeat top center/cover;
+    background-blend-mode: darken;
 }
 .vsk_root .header_102 .header_first_102{
     display: flex;
@@ -138,6 +129,7 @@ section{
 .vsk_root .header_102 .header_first_102 .text h3{
     font-size: 8rem;
     line-height: 1;
+    color: white;
 }
 
 .vsk_root .header_102 .header_first_102 .icon_102 .icon_pencil_102{
@@ -164,6 +156,7 @@ section{
 }
 .vsk_root .header_102 .header_second_102 .header_second_start_102 h1{
     font-size: 8rem;
+    color: white;
 }
 .vsk_root .header_102 .header_second_102 .header_second_end_102{
     display: flex;
@@ -171,16 +164,44 @@ section{
     justify-content: center;
 }
 .vsk_root .header_102 .header_second_102 .header_second_end_102 .text_102{
-    font-family: 'Donut';
-    font-size: 7rem;
-    /* color: #0066FF; */
-    color: var(--color-lead);
-    padding: .7rem;
-    border: 10px dashed ;
-    border-radius: 50px;
-    /* letter-spacing: 10px; */
+    font-size: 8rem;
+    display: inline-block; /* Ensure each letter stays in line */
+    animation: revealLetters 0.5s forwards; /* Apply animation with forwards fill mode */
+    animation-delay: calc(0.1s * var(--index)); /* Delay each letter */
+}
+.vsk_root .header_102 .header_second_102 .header_second_end_102 .text_102 span{
+    display: inline-block; /* Ensure each letter stays in line */
+    animation: revealLetters 0.5s forwards; /* Apply animation with forwards fill mode */
+    opacity: 0; /* Start with letters invisible */
 }
 
+.vsk_root .header_102 .header_second_102 .header_second_end_102 .text_102 span:nth-child(1){
+    animation-delay: 0s; /* Delay first letter by 0.1s */
+}
+.vsk_root .header_102 .header_second_102 .header_second_end_102 .text_102 span:nth-child(2){
+    animation-delay: 0.1s; /* Delay second letter by 0.2s */
+}
+.vsk_root .header_102 .header_second_102 .header_second_end_102 .text_102 span:nth-child(3){
+    animation-delay: 0.2s; /* Delay third letter by 0.3s */
+}
+.vsk_root .header_102 .header_second_102 .header_second_end_102 .text_102 span:nth-child(4){
+    animation-delay: 0.3s; /* Delay fourth letter by 0.4s */
+}
+.vsk_root .header_102 .header_second_102 .header_second_end_102 .text_102 span:nth-child(5){
+    animation-delay: 0.4s; /* Delay fifth letter by 0.5s */
+}
+.vsk_root .header_102 .header_second_102 .header_second_end_102 .text_102 span:nth-child(6){
+    animation-delay: 0.5s; /* Delay sixth letter by 0.6s */
+}
+.vsk_root .header_102 .header_second_102 .header_second_end_102 .text_102 span:nth-child(7){
+    animation-delay: 0.6s; /* Delay seventh letter by 0.7s */
+}
+.vsk_root .header_102 .header_second_102 .header_second_end_102 .text_102 span:nth-child(8){
+    animation-delay: 0.7s; /* Delay eighth letter by 0.8s */
+}
+.vsk_root .header_102 .header_second_102 .header_second_end_102 .text_102 span:nth-child(9){
+    animation-delay: 0.8s; /* Delay ninth letter by 0.9s */
+}
 .vsk_root .header_102 .header_second_102 .header_second_end_102 .image_102{
     max-width: 300px; /* Ensure the image doesn't exceed its container's width */
     height: auto; /* Maintain aspect ratio */
@@ -469,10 +490,7 @@ section{
     color: var(--color-dark);
     padding: 2rem;
     display: flex;
-    gap: 8rem;
-}
-.vsk_root .future_card_102 .card_content_102 .virtual_102{
-    padding-inline-start: 4rem;
+    /* gap: 8rem; */
 }
 .vsk_root .future_card_102 .card_content_102 .virtual_102 h1{
     margin-bottom: 2rem;
@@ -550,8 +568,147 @@ video{
       transform: rotate(360deg); /* Rotate the image 360 degrees */
     }
   }
+@keyframes revealLetters {
+    from {
+        opacity: 0; /* Start with letters invisible */
+        transform: translateY(50px); /* Move letters downwards */
+    }
+    to {
+        opacity: 1; /* Fully reveal letters */
+        transform: translateY(0); /* Reset the position */
+    }
+}
 
   /*========MEDIA QUERIES========*/
-  @media only screen and (max-width: 768px){
+  @media only screen and (max-width: 1200px){
+    .vsk_root .future_card_102 .card_content_102 video{
+        width: 350px;
+    }
+  }
+  @media only screen and (max-width: 1024px){
+    .vsk_root .container_102{
+        width: var(--container-width-tablet);
+    }
+    h1{
+        font-size: 4.2rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 1.9rem;
+        color: var(--color-white);
+    }
+    section{
+        padding-bottom: var(--bottom-section-padding-mobile);
+    }
+    .vsk_root .nav-container_102{
+        position: relative;
+        width: 100vw;
+    }
+    .vsk_root .nav_items_102{
+        position: fixed;
+        top: 6rem;
+        right: 0;
+        background-color: var(--color-white);
+        height: max-content;
+        width: 18rem;
+        box-shadow: -2rem 2rem 3rem rgba(255,255,255, 0.2);
+        flex-direction: column;
+        gap: 0;
+        z-index: 3;
+        display: none;
+    }
+    .vsk_root .nav_items_102 li{
+        width: 100%;
+        height: 6rem;
+    }
+    .vsk_root .nav_items_102 li a{
+        color: var(--color-dark);
+        width: 100%;
+        height: 100%;
+        display: block;
+        padding-left: 3rem;
+        display: flex;
+        align-items: center;
+        transition: all 400ms ease;
+    }
+    .nav_items_102 li a:hover{
+        background-color: var(--color-primary);
+        color: var(--color-white);
+    }
+    .vsk_root .nav-signin_signup{
+        display: none;
+    }
+    .vsk_root .nav-logo_102{
+        padding-inline: 1rem;
+        font-size: 1.2rem;
+    }
+    .vsk_root nav button{
+        display: inline-block;
+        margin-right: 1.4rem;
+        background: transparent;
+        color: var(--color-dark);
+        cursor: pointer;
+    }
+    .vsk_root nav button.close-btn_102{
+        display: none;
+    }
+    .vsk_root nav button ion-icon{
+        font-size: 2.4rem;
+    }
+    /* Header */
+    .vsk_root .header_102 .header_second_102 .header_second_end_102 .image_102{
+        display: none;
+    }
+    .vsk_root .header_102 .header_first_102{
+    }
+    
+    .vsk_root .header_102 .header_first_102 .icon_102 .icon_pencil_102{
+        display: none;
+    }
 
+    /*special  program*/
+    .vsk_root .future_102 .earth_102{
+        width: 200px;
+        left: 75%;
+        top: 15%;
+    }
+    /*content-card*/
+
+    .vsk_root .future_card_102 .card_content_102{
+        flex-direction: column;
+    }
+    .vsk_root .future_card_102 .card_content_102 p{
+        display: none;
+    }
+    .vsk_root .future_card_102 .card_content_102 h1{
+        margin-bottom: 0;
+    }
+    .vsk_root .future_card_102 .card_content_102 video{
+        width: 700px;
+    }
+  }
+  @media only screen and (max-width: 900px){
+    .vsk_root .special_program_102{
+        display: none;
+    }
+    .vsk_root .header_102 .header_first_102 .text h3{
+        font-size: 6rem;
+    }
+    .vsk_root .header_102 .header_first_102 .text .text_102{
+        font-size: 6rem;
+    }
+    .vsk_root .header_102 .header_second_102 .header_second_start_102 h1{
+        font-size: 6rem;
+    }
+    .vsk_root .future_102 .future_lead_102 h1{
+        font-size: 6rem;
+    }
+    .vsk_root .future_102 .future_lead_102 h2{
+        font-size: 3rem;
+    }
+    .vsk_root .future_102 .future_lead_2_102 h1{
+        font-size: 6rem;
+    }
   }
