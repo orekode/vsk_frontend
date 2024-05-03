@@ -40,6 +40,22 @@
     font-family: 'bitcrusher';
     src: url('/Assets/bitcrusher.ttf');
 }
+@font-face{
+    font-family: 'Robson';
+    src: url('/Assets/Robson.ttf');
+}
+@font-face {
+    font-family: 'Zillah';
+    src: url('/Assets/Zillah.ttf');
+}
+@font-face {
+    font-family: 'Typoline';
+    src: url('/Assets/Typoline.otf');
+}
+@font-face {
+    font-family: 'Speedway';
+    src: url('/Assets/Speedway.ttf');
+}
 *{
     margin: 0;
     padding: 0;
@@ -75,10 +91,17 @@ section{
 }
 .vsk_root .btn_102{
     padding: 1rem 2.3rem;
-    background-color: var(--color-primary);
+    /* background-color: var(--color-primary); */
+    background-color: #8C52FF;
     color: var(--color-white);
     font-weight: 500;
-    border-radius: .4rem;  
+    border-radius: .4rem;
+    transition: all 300ms ease;  
+}
+.vsk_root .btn_102:hover{
+    background-color: white;
+    color: #8C52FF;
+    border: 1px solid #8C52FF;
 }
 
 .vsk_root nav{
@@ -114,101 +137,102 @@ nav button{
 }
 .vsk_root .header_102 {
     max-width: 100vw;
+    position: relative;
     text-align: center;
     padding: var(--bottom-section-padding);
     font-size: var(--h2);
-    font-family: 'churchward';
-    background: rgba(0,0,0,.7) url('/Assets/kids.avif') no-repeat top center/cover;
-    background-blend-mode: darken;
+    font-family: 'Robson'; /*changes*/
+    /* background: rgba(0,0,0,.7) url('/Assets/kids.avif') no-repeat top center/cover; */
+    background: url('/Assets/Herobg.png') no-repeat top center/cover;
+    /* background-blend-mode: darken; */
 }
 .vsk_root .header_102 .header_first_102{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.vsk_root .header_102 .header_first_102 .text h3{
-    font-size: 8rem;
+.vsk_root .header_102 .text h1{
+    font-size: 10rem;
     line-height: 1;
-    color: white;
+    color: #2F2D52;
 }
 
-.vsk_root .header_102 .header_first_102 .icon_102 .icon_pencil_102{
-    width: 150px;
-}
-.vsk_root .header_102 .header_first_102 .text .text_102{
-    font-family: 'Donut';
-    font-size: 8rem;
-    letter-spacing: px;
-    /* color: #0066FF; */
-    color: var(--color-lead);
-}
-.vsk_root .header_102 .header_second_102 .header_second_start_102{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-.vsk_root .header_102 .header_second_102 .header_second_start_102 img{
-    width: 200px;
+.vsk_root .header_102 .icon_pencil_102{
     position: absolute;
-    right: calc(100% + -580px); /* Position the image to the left of the text */
-    top: 0;
+    width: 150px;
+    transform: rotate(270deg);
+    top: 21%;
+    left: 6%;
+    z-index: 1;
 }
-.vsk_root .header_102 .header_second_102 .header_second_start_102 h1{
-    font-size: 8rem;
-    color: white;
+.vsk_root .header_102 .icon_curvy_102{
+    position: absolute;
+    width: 150px;
+    top: 21%;
+    left: 6%;
 }
-.vsk_root .header_102 .header_second_102 .header_second_end_102{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.vsk_root .header_102 .icon_book_102{
+    position: absolute;
+    width: 200px;
+    bottom: 25%;
+    right: 20%;
 }
-.vsk_root .header_102 .header_second_102 .header_second_end_102 .text_102{
-    font-size: 8rem;
-    display: inline-block; /* Ensure each letter stays in line */
-    animation: revealLetters 0.5s forwards; /* Apply animation with forwards fill mode */
-    animation-delay: calc(0.1s * var(--index)); /* Delay each letter */
+.vsk_root .header_102 .icon_learning_102{
+    position: absolute;
+    width: 150px;
+    bottom: 0;
+    right: 0;
 }
-.vsk_root .header_102 .header_second_102 .header_second_end_102 .text_102 span{
-    display: inline-block; /* Ensure each letter stays in line */
-    animation: revealLetters 0.5s forwards; /* Apply animation with forwards fill mode */
-    opacity: 0; /* Start with letters invisible */
+.vsk_root .header_102 .icon_round_102{
+    position: absolute;
+    width: 250px;
+    bottom: -8%;
+    left: -7%;
+    transform: rotate(45deg);
 }
-
-.vsk_root .header_102 .header_second_102 .header_second_end_102 .text_102 span:nth-child(1){
-    animation-delay: 0s; /* Delay first letter by 0.1s */
+.vsk_root .header_102 .icon_orbit_102{
+    position: absolute;
+    width: 200px;
+    top: 12%;
+    right: 23%;
 }
-.vsk_root .header_102 .header_second_102 .header_second_end_102 .text_102 span:nth-child(2){
-    animation-delay: 0.1s; /* Delay second letter by 0.2s */
+.vsk_root .header_102 .icon_genius_102{
+    position: absolute;
+    width: 200px;
+    bottom: 28%;
+    left: 28%;
+    z-index: 1;
 }
-.vsk_root .header_102 .header_second_102 .header_second_end_102 .text_102 span:nth-child(3){
-    animation-delay: 0.2s; /* Delay third letter by 0.3s */
+.vsk_root .header_102 .icon_bubbles_102{
+    position: absolute;
+    width: 80px;
+    bottom: 30%;
+    left: 28%;
 }
-.vsk_root .header_102 .header_second_102 .header_second_end_102 .text_102 span:nth-child(4){
-    animation-delay: 0.3s; /* Delay fourth letter by 0.4s */
+.vsk_root .header_102 .icon_bub_102{
+    position: absolute;
+    width: 20px;
+    top: 38%;
+    left: 15%;
 }
-.vsk_root .header_102 .header_second_102 .header_second_end_102 .text_102 span:nth-child(5){
-    animation-delay: 0.4s; /* Delay fifth letter by 0.5s */
+.vsk_root .header_102 .text .text_102{
+    font-family: 'Speedway';
+    font-size: 9rem;
+    letter-spacing: px;
+    color: #FF7A0D;
+    /* color: var(--color-lead); */
 }
-.vsk_root .header_102 .header_second_102 .header_second_end_102 .text_102 span:nth-child(6){
-    animation-delay: 0.5s; /* Delay sixth letter by 0.6s */
+.vsk_root .header_102 .text .text-shadow_102{
+    color: #2F2D52;
+    text-shadow: -2px 2px 0 #fff,
+                    2px 2px 0 #fff,
+                    2px -2px 0 #fff,
+                    -2px -2px 0 #fff;
 }
-.vsk_root .header_102 .header_second_102 .header_second_end_102 .text_102 span:nth-child(7){
-    animation-delay: 0.6s; /* Delay seventh letter by 0.7s */
+.vsk_root .header_102 .text .text-learning_102{
+    color: #FF7A0D;
 }
-.vsk_root .header_102 .header_second_102 .header_second_end_102 .text_102 span:nth-child(8){
-    animation-delay: 0.7s; /* Delay eighth letter by 0.8s */
-}
-.vsk_root .header_102 .header_second_102 .header_second_end_102 .text_102 span:nth-child(9){
-    animation-delay: 0.8s; /* Delay ninth letter by 0.9s */
-}
-.vsk_root .header_102 .header_second_102 .header_second_end_102 .image_102{
-    max-width: 300px; /* Ensure the image doesn't exceed its container's width */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Ensure the image behaves as a block element */
-    position: relative;
-}
-
+/*  SPECIAL CONTAINER */
 .vsk_root .special_program_102{
     border-radius: 20px;
     background-color: #f1f1f1;
@@ -233,7 +257,7 @@ nav button{
 }
 .vsk_root .special_program_text_102 .program_102 h1{
     position: relative;
-    z-index: 5;
+    z-index: 1;
     font-size: 8rem;
 }
 .vsk_root .special_program_text_102 .program_102 .book_102{
@@ -253,7 +277,7 @@ nav button{
 .vsk_root .special_program_2_102 .program2_102 h1{ 
     font-size: 8rem;
     position: relative;
-    z-index: 6;
+    z-index: 1;
 }
 .vsk_root .special_program_2_102 .program2_102 span{
     background: var(--color-white);
@@ -275,7 +299,7 @@ nav button{
     order: 1;
     position: absolute;
     right: 0;
-    top: ;
+    /* top: ; */
     width: 200px;
     transform: rotate(-105deg);
 }
@@ -451,9 +475,9 @@ nav button{
 }
 .vsk_root .future_102 .earth_102{
     position: absolute;
-    width: 500px;
-    left: 45%;
-    top: -5%;
+    width: 450px;
+    left: 50%;
+    top: -4%;
     animation: rotateEarth 10s linear infinite;
     backface-visibility: hidden;
     transform-origin: center center;
