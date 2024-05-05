@@ -538,6 +538,65 @@ nav button{
     width: 500px;
 }
 
+.vsk_root .special_program_102 .payment_plan_102{
+    padding: 2rem;
+}
+.vsk_root .special_program_102 .payment_plan_102 .payment_header_102 h1{
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.vsk_root .special_program_102 .payment_plan_102 .payment_cards_102{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* gap: 1rem; */
+    place-items: center;
+    font-family: 'poppins';
+}
+.vsk_root .special_program_102 .payment_plan_102 .payment_cards_102 .payment_card_102{
+    border-radius: 20px;
+    border: 1px solid #102542;
+    padding: 2rem;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.vsk_root .special_program_102 .payment_plan_102 .payment_cards_102 .payment_card_102:hover{
+    transform: translateY(-10px);
+    background-color: #102542;
+    color: var(--color-white);
+}
+.vsk_root .special_program_102 .payment_plan_102 .payment_cards_102 .payment_card_102 h3,h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.vsk_root .special_program_102 .payment_plan_102 .payment_cards_102 .payment_card_102 span{
+    font-size: 1rem;
+    text-align: center;
+    color: #102542a0;
+}
+.vsk_root .special_program_102 .payment_plan_102 .payment_cards_102 .payment_card_102 .payment_card_content .payment_card_text_102{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: 1rem;
+    /* padding: 1rem; */
+}
+.vsk_root .special_program_102 .payment_plan_102 .payment_cards_102 .payment_card_102 .payment_card_content .payment_card_text_102 ion-icon{
+    font-size: 1rem;
+}
+.vsk_root .special_program_102 .payment_plan_102 .payment_cards_102 .payment_card_102 .payment_card_btn_102{
+    text-align: center;
+}
+.vsk_root .special_program_102 .payment_plan_102 .payment_cards_102 .payment_card_102 .payment_card_btn_102 button{
+    padding: 1rem 2rem;
+    background-color: var(--color-white);
+    color: #102542;
+    border: 1px solid #102542;
+    border-radius: .4rem;
+    transition: all 300ms ease; 
+    cursor: pointer; 
+}
 
 .vsk_root .potential_102{
     display: flex;
