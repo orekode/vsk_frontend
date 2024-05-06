@@ -92,7 +92,8 @@ section{
 .vsk_root .btn_102{
     padding: 1rem 2.3rem;
     /* background-color: var(--color-primary); */
-    background-color: #8C52FF;
+    /* background-color: #8C52FF; */
+    background-color: #102542;
     color: var(--color-white);
     font-weight: 500;
     border-radius: .4rem;
@@ -100,8 +101,10 @@ section{
 }
 .vsk_root .btn_102:hover{
     background-color: white;
-    color: #8C52FF;
-    border: 1px solid #8C52FF;
+    /* color: #8C52FF; */
+    color: #102542;
+    /* border: 1px solid #8C52FF; */
+    border: 1px solid #102542;
 }
 
 .vsk_root nav{
@@ -573,7 +576,7 @@ nav button{
 .vsk_root .special_program_102 .payment_plan_102 .payment_cards_102 .payment_card_102 span{
     font-size: 1rem;
     text-align: center;
-    color: #102542a0;
+    /* color: #102542a0; */
 }
 .vsk_root .special_program_102 .payment_plan_102 .payment_cards_102 .payment_card_102 .payment_card_content .payment_card_text_102{
     display: flex;
@@ -585,17 +588,26 @@ nav button{
 .vsk_root .special_program_102 .payment_plan_102 .payment_cards_102 .payment_card_102 .payment_card_content .payment_card_text_102 ion-icon{
     font-size: 1rem;
 }
+.vsk_root .special_program_102 .payment_plan_102 .payment_cards_102 .payment_card_102 .payment_card_content .payment_card_text_102 .cancel_102{
+    color: red;
+
+}
 .vsk_root .special_program_102 .payment_plan_102 .payment_cards_102 .payment_card_102 .payment_card_btn_102{
     text-align: center;
 }
 .vsk_root .special_program_102 .payment_plan_102 .payment_cards_102 .payment_card_102 .payment_card_btn_102 button{
     padding: 1rem 2rem;
-    background-color: var(--color-white);
-    color: #102542;
+    background-color: #102542;
+    color: white;
+    font-family: 'poppins';
     border: 1px solid #102542;
     border-radius: .4rem;
     transition: all 300ms ease; 
     cursor: pointer; 
+}
+.vsk_root .special_program_102 .payment_plan_102 .payment_cards_102 .payment_card_102 .payment_card_btn_102 button:hover{
+    background-color: white;
+    color: #102542;
 }
 
 .vsk_root .potential_102{
@@ -741,21 +753,48 @@ nav button{
       transform: rotate(360deg); /* Rotate the image 360 degrees */
     }
   }
-@keyframes revealLetters {
-    from {
-        opacity: 0; /* Start with letters invisible */
-        transform: translateY(50px); /* Move letters downwards */
-    }
-    to {
-        opacity: 1; /* Fully reveal letters */
-        transform: translateY(0); /* Reset the position */
-    }
-}
 
   /*========MEDIA QUERIES========*/
   @media only screen and (max-width: 1200px){
-    .vsk_root .future_card_102 .card_content_102 video{
+    .vsk_root .header_102 .icon_orbit_102{
+        right: 20%;
+        width: 170px;
+    }
+    .vsk_root .header_102 .icon_bub_102{
+        display: none;
+    }
+    .vsk_root .header_102 .icon_pencil_102{
+        left: 5%;
+        width: 120px;
+    }
+    .vsk_root .header_102 .icon_curvy_102{
+        left: 5%;
+        width: 100px;
+    }
+    .vsk_root .header_102 .icon_book_102{
+        right: 15%;
+        bottom: 22%;
+        width: 150px;
+    }
+    .vsk_root .header_102 .icon_genius_102{
+        width: 150px;
+    }
+    .vsk_root  .special_program_102 .future_card_102 .card_content_102 video{
         width: 350px;
+    }
+    .vsk_root .special_program_container_102 h1{
+        font-size: 6rem;
+    }
+    .vsk_root .special_program_container_102 .planet_102{
+        width: 100px;
+        top: 10%;
+    }
+    .vsk_root .special_program_container_102 .rocket_102{
+        width: 150px;
+        top: 35%;
+    }
+    .vsk_root .special_program_container_102 .education_102{
+        
     }
   }
   @media only screen and (max-width: 1024px){
@@ -807,7 +846,7 @@ nav button{
         transition: all 400ms ease;
     }
     .nav_items_102 li a:hover{
-        background-color: var(--color-primary);
+        background-color: #102542;
         color: var(--color-white);
     }
     .vsk_root .nav-signin_signup{
