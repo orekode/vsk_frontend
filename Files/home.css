@@ -429,9 +429,7 @@ nav button{
 
 
 .vsk_root .special_program_102 .future_102 .future_lead_102{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+    
 }
 .vsk_root .special_program_102 .future_102 .future_lead_102 h1{
     font-size: 7rem;
@@ -446,12 +444,14 @@ nav button{
     transition: 0.3s ease;
 }
 .vsk_root .special_program_102 .future_102 .future_lead_102 .lead_102{
-    background-color: var(--color-primary);
-    padding: 1.3rem;
-    border-radius: 50px;
-}
-.vsk_root .special_program_102 .future_102 .future_lead_102 .lead_102:hover{
-    background-color: white;
+    background: var(--color-primary);
+    font-size: 5rem;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 1rem;
+    border: 10px dashed #fff;
+    transform: rotate(-13deg);
+    color: white;
 }
 .vsk_root .special_program_102 .future_102 .future_lead_102 h2:hover{
     color: var(--color-primary);
@@ -794,8 +794,31 @@ nav button{
         top: 35%;
     }
     .vsk_root .special_program_container_102 .education_102{
-        
+        font-size: 3.5rem;
     }
+    .vsk_root .special_program_102 .future_102 .earth_102{
+        width: 300px;
+        left: 65%;
+        top: 15%;
+    }
+    .vsk_root .potential_102 .icon_pencil_102{
+        right: 5%;
+        top: 20%;
+    }   
+    .vsk_root .potential_102 .icon_curvy_102{
+        right: 5%;
+    }
+    .vsk_root .special_program_102 .course_container_102 .binders_102{
+        left: 32.25%;
+    }
+    .vsk_root .special_program_102 .course_container_102 .binders_2_102{
+        left: 64.5%;
+    }
+    .vsk_root .special_program_102 .payment_plan_102 .payment_cards_102{
+        gap: 1rem;
+    }
+
+    
   }
   @media only screen and (max-width: 1024px){
     .vsk_root .container_102{
@@ -804,13 +827,13 @@ nav button{
     h1{
         font-size: 4.2rem;
     }
-    h2{
+    /* h2{
         font-size: 2rem;
-    }
-    h3{
+    } */
+    /* h3{
         font-size: 1.9rem;
         color: var(--color-white);
-    }
+    } */
     section{
         padding-bottom: var(--bottom-section-padding-mobile);
     }
@@ -873,18 +896,45 @@ nav button{
     .vsk_root .header_102 .header_second_102 .header_second_end_102 .image_102{
         display: none;
     }
-    .vsk_root .header_102 .header_first_102{
+    .vsk_root .header_102 .text h1{
+        font-size: 8rem;
     }
-    
+    .vsk_root .header_102 .icon_pencil_102{
+        width: 100px;
+        left: 8%;
+        top: 23%;
+    }
+    .vsk_root .header_102 .icon_curvy_102{
+        left: 8%;
+        top: 23%;
+    }
+    .vsk_root .header_102 .text .text_102{
+        font-size: 7rem;
+    }
+    .vsk_root .header_102 .icon_round_102{
+        left: -13%;
+    }
     .vsk_root .header_102 .header_first_102 .icon_102 .icon_pencil_102{
         display: none;
     }
 
     /*special  program*/
-    .vsk_root .future_102 .earth_102{
+    .vsk_root .special_program_container_102 h1{
+        font-size: 5rem;
+    }
+    .vsk_root .special_program_102 .future_102 .earth_102{
         width: 200px;
-        left: 75%;
-        top: 15%;
+        left: 55%;
+        top: 10%;
+    }
+    .vsk_root .special_program_container_102 .planet_102{
+        left: 50%;
+    }
+    .vsk_root .special_program_102 .future_102 .future_lead_102 h1,h2{
+        font-size: 5rem;
+    }
+    .vsk_root .special_program_102 .future_102 .mercury_102{
+        bottom: 65%;
     }
     /*content-card*/
 
@@ -897,14 +947,39 @@ nav button{
     .vsk_root .future_card_102 .card_content_102 h1{
         margin-bottom: 0;
     }
-    .vsk_root .future_card_102 .card_content_102 video{
-        width: 700px;
+    .vsk_root  .special_program_102 .future_card_102 .card_content_102 video{
+        width: 800px;
+    }
+    .vsk_root .special_program_102 .payment_plan_102 .payment_cards_102{
+        gap: 1rem;
+    }
+    .vsk_root .special_program_102 .payment_plan_102 .payment_cards_102 .payment_card_102 h3, h2{
+        font-size: 2rem;
+    }
+
+    /*POTENTIAL*/
+    .vsk_root .potential_102 .potential_text_102 h1 {
+        font-size: 8rem;
+    }
+    .vsk_root .potential_102 .icon_pencil_102{
+        width: 200px;
+        right: 12%;
+        top: 23%;
+    }
+    .vsk_root .potential_102 .icon_curvy_102{
+        right: 12%;
+        top: 23%;
+        width: 100px;
+    }
+    .vsk_root .potential_102 .icon_diamond_102{
+        left: -15%;
+    }
+    .vsk_root .potential_102 .icon_polygon_102 {
+        left: -15%;
+        width: 270px;
     }
   }
   @media only screen and (max-width: 900px){
-    .vsk_root .special_program_102{
-        display: none;
-    }
     .vsk_root .header_102 .header_first_102 .text h3{
         font-size: 6rem;
     }
@@ -913,6 +988,20 @@ nav button{
     }
     .vsk_root .header_102 .header_second_102 .header_second_start_102 h1{
         font-size: 6rem;
+    }
+    .vsk_root .special_program_102{
+        /* display: none; */
+    }
+    .vsk_root .special_program_102 .special_program_container_102{
+        display: none;
+    }
+    .vsk_root .special_program_102 .future_102 .earth_102{
+        /* width: 300px; */
+        left: 65%;
+        top: 10%;
+    }
+    .vsk_root .special_program_102 .course_container_102 .binders_2_102{
+        left: 63.5%;
     }
     .vsk_root .future_102 .future_lead_102 h1{
         font-size: 6rem;
@@ -923,6 +1012,7 @@ nav button{
     .vsk_root .future_102 .future_lead_2_102 h1{
         font-size: 6rem;
     }
+    
       /*special  program*/
       .vsk_root .future_102 .earth_102{
         width: 150px;
@@ -930,8 +1020,8 @@ nav button{
         top: 15%;
     }
       /*special  program*/
-      .vsk_root video{
-        /* width: 200px; */
+      .vsk_root  .special_program_102 .future_card_102 .card_content_102 video{
+        width: 600px;
     }
   }
   @media only screen and (max-width: 900px){
