@@ -700,10 +700,13 @@ nav button{
     border-bottom: 2px solid var(--color-dark);
     display: flex;
     align-items: center;
-    gap: 15rem;
-    justify-content: center;
+    /* gap: 15rem; */
+    justify-content: space-evenly;
     padding: 2rem;
     margin-bottom: 1rem;
+}
+.vsk_root .footer_container_102 .footer_content_102 .about_102{
+    padding: 2rem;
 }
 .vsk_root .footer_container_102 .footer_content_102 ul li a{
     text-decoration: none;
@@ -827,13 +830,6 @@ nav button{
     h1{
         font-size: 4.2rem;
     }
-    /* h2{
-        font-size: 2rem;
-    } */
-    /* h3{
-        font-size: 1.9rem;
-        color: var(--color-white);
-    } */
     section{
         padding-bottom: var(--bottom-section-padding-mobile);
     }
@@ -947,6 +943,9 @@ nav button{
     .vsk_root .future_card_102 .card_content_102 h1{
         margin-bottom: 0;
     }
+    .vsk_root  .special_program_102 .future_card_102 .card_content_102 .virtual_image{
+        text-align: center;
+    }
     .vsk_root  .special_program_102 .future_card_102 .card_content_102 video{
         width: 800px;
     }
@@ -955,6 +954,9 @@ nav button{
     }
     .vsk_root .special_program_102 .payment_plan_102 .payment_cards_102 .payment_card_102 h3, h2{
         font-size: 2rem;
+    }
+    .vsk_root .special_program_102 .payment_plan_102 .payment_cards_102 .payment_card_102 .payment_card_content .payment_card_text_102 p{
+        font-size: .7rem;
     }
 
     /*POTENTIAL*/
@@ -1024,7 +1026,107 @@ nav button{
         width: 600px;
     }
   }
-  @media only screen and (max-width: 900px){
+
+  @media only screen and (max-width: 845px){
+    .vsk_root .header_102 .text h1{
+        font-size: 4rem;
+    }
+    .vsk_root .header_102 .text .text_102 {
+        font-size: 4rem;
+    }
+    .vsk_root .header_102 .icon_orbit_102{
+        width: 100px;
+        top: 20%;
+        right: 27%;
+        display: none;
+    }
+    .vsk_root .header_102 .icon_genius_102{
+        width: 80px;
+        top: 50%;
+        left: 35%;
+    }
+    .vsk_root .header_102 .icon_bubbles_102 {
+        width: 40px;
+        top: 55%;
+        left: 35%;
+    }
+    .vsk_root .header_102 .icon_learning_102{
+        width: 100px;
+    }
+    .vsk_root .header_102 .icon_book_102{
+        width: 100px;
+        bottom: 30%;
+        right: 25%;
+    }
+    .vsk_root .header_102 .icon_curvy_102{
+        display: none;
+    }
+    .vsk_root .header_102 .icon_pencil_102{
+        display: none;
+    }
+    .vsk_root .special_program_102 .future_102 .venus_102{
+        width: 50px;
+    }
+    .vsk_root .special_program_102 .future_102 .mercury_102{
+        width: 50px;
+    }
+    .vsk_root .special_program_102 .payment_plan_102 .payment_cards_102 .payment_card_102{
+        padding: 1rem;
+    }
+    .special_program_102 .payment_plan_102 .payment_cards_102 .payment_card_102 h3, h2{
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .vsk_root .special_program_102 .payment_plan_102 .payment_cards_102 .payment_card_102 span{
+        font-size: .7rem;
+    }
+    .vsk_root .potential_102 .icon_plant_102{
+        width: 150px;
+    }
+        .vsk_root .footer_container_102 .footer_content_102{
+            flex-wrap: wrap;
+      }
+  }
+  @media only screen and (max-width:780px){
+    .vsk_root .special_program_102 .course_container_102{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-auto-flow: row;
+    }
+    .vsk_root .special_program_102 .course_container_102 .binders_102{
+        display: none;
+    }
+    .vsk_root .special_program_102 .course_container_102 .binders_2_102{
+        display: none;
+    }
+  }
+  @media only screen and (max-width:730px) {
+    .vsk_root .special_program_102 .future_102 .future_lead_102 h1{
+        font-size: 3rem;
+    }
+    .vsk_root .special_program_102 .future_102 .future_lead_102 .lead_102 {
+        font-size: 3rem;
+    }
+    .vsk_root .special_program_102 .future_102 .earth_102 {
+        width: 150px;
+        left: 50%;
+        top: 8%;
+    }
+    .vsk_root .future_card_102 .card_content_102 h1{
+        font-size: 3rem;
+    }
+    .vsk_root  .special_program_102 .future_card_102 .card_content_102 video{
+        width: 400px;
+    }
+  }
+  @media only screen and (max-width: 660px){
+    .vsk_root .special_program_102 .payment_plan_102 .payment_cards_102{
+        grid-template-columns: 1fr;
+    }
+    .vsk_root .special_program_102 .payment_plan_102 .payment_cards_102 .payment_card_102{
+        padding: 2rem;
+    }
+  }
+  /* @media only screen and (max-width: 900px){
     .vsk_root .binders_102{
         display: none;
     }
@@ -1058,4 +1160,4 @@ nav button{
     justify-content: flex-start;
     gap: 0;
   }
-  }
+  } */
