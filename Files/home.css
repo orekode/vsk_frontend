@@ -524,10 +524,11 @@ nav button{
     color: #102542;
     padding: 2rem;
     display: flex;
+    justify-content: space-evenly;
 }
 .vsk_root .special_program_102 .future_card_102 .card_content_102 .virtual_102 h1{
     margin-bottom: 2rem;
-    width: 600px;
+    /* width: 600px; */
     overflow-wrap: break-word;
 }
 .vsk_root .special_program_102 .future_card_102 .card_content_102 .virtual_102 p{
@@ -1083,6 +1084,23 @@ nav button{
     .vsk_root .potential_102 .icon_plant_102{
         width: 150px;
     }
+    .vsk_root .potential_102 .icon_diamond_102{
+        left: -20%;
+    }
+    .vsk_root .potential_102 .potential_text_102 h1 {
+        font-size: 5rem;
+    }
+    .vsk_root .potential_102 .icon_diamond_102 {
+        left: -10%;
+        width: 200px;
+    }
+    .vsk_root .potential_102 .icon_polygon_102 {
+        left: -16%;
+        width: 200px;
+    }
+    .vsk_root .potential_102 .potential_mercury_102 {
+        width: 40px;
+    }
         .vsk_root .footer_container_102 .footer_content_102{
             flex-wrap: wrap;
       }
@@ -1111,6 +1129,9 @@ nav button{
         left: 50%;
         top: 8%;
     }
+    .vsk_root .header_102 .text .text_102 {
+        font-size: 3rem;
+    }
     .vsk_root .future_card_102 .card_content_102 h1{
         font-size: 3rem;
     }
@@ -1122,10 +1143,133 @@ nav button{
     .vsk_root .special_program_102 .payment_plan_102 .payment_cards_102{
         grid-template-columns: 1fr;
     }
+    .vsk_root .header_102 .text h1{
+        font-size: 3rem;
+    }
+    .vsk_root .header_102 .icon_round_102 {
+        left: -25%;
+    }
+    .vsk_root .special_program_102 .future_card_102 .card_content_102 .virtual_102 h1{
+        width: 400px;
+    }
     .vsk_root .special_program_102 .payment_plan_102 .payment_cards_102 .payment_card_102{
         padding: 2rem;
     }
+    .vsk_root .potential_102 .icon_diamond_102 {
+        left: -15%;
+    }
+    .vsk_root .header_102 .icon_genius_102 {
+        width: 60px;
+    }
+    .vsk_root .header_102 .icon_book_102 {
+        width: 70px;
+        bottom: 35%;
+        right: 29%;
+    }
+    .vsk_root .potential_102 .icon_pencil_102 {
+        width: 150px;
+    }
+    .vsk_root .potential_102 .icon_curvy_102 {
+        width: 80px;
+    }
+    .vsk_root .special_program_102 .future_102 .earth_102 {
+        width: 100px;
+        left: 55%;
+        top: 12%;
+    }
   }
+
+  @media only screen and (max-width: 550px){
+    .vsk_root .header_102 .icon_book_102 {
+        bottom: 30%;
+        left: 65%;
+  }
+    .vsk_root .header_102 .icon_genius_102 {
+        top: 53%;
+  }
+    .vsk_root .special_program_102 .future_102 .earth_102 {
+    left: 70%;
+ }
+ .vsk_root .potential_102 .icon_diamond_102 {
+    left: -20%;
+ }
+ .vsk_root .potential_102 .icon_polygon_102 {
+    width: 150px;
+ }
+ .vsk_root .potential_102 .icon_plant_102 {
+    width: 100px;
+}
+ .vsk_root .special_program_102 .future_card_102 .card_header_102 .header_lead_102 h4{
+    font-size: .5rem;
+}
+ .vsk_root .special_program_102 .future_card_102 .card_content_102 .virtual_102 h1 {
+    font-size: 2rem;
+}
+ .vsk_root .special_program_102 .payment_plan_102 .payment_header_102 h1{
+    font-size: 3rem;
+}
+ .special_program_102 .payment_plan_102 .payment_cards_102 .payment_card_102 h2{
+    font-size: 1rem;
+}
+ .special_program_102 .payment_plan_102 .payment_cards_102 .payment_card_102 h3{
+    font-size: 1.5rem;
+}
+ .vsk_root .footer_container_102 .footer_content_102 {
+    padding: 1.5rem;
+}
+ .vsk_root .header_102 .icon_round_102 {
+    left: -30%;
+}
+ .vsk_root .potential_102 .icon_pencil_102 {
+    right: 0;
+}
+ .vsk_root .potential_102 .icon_curvy_102{
+    right: 0;
+ }
+}
+@media only screen and (max-width: 480px){
+    .vsk_root .header_102 .text h1{
+        font-size: 2.5rem;
+    }
+    .vsk_root .header_102 .text .text_102{
+        font-size: 2rem;
+    }
+    .vsk_root .header_102 .icon_genius_102{
+        width: 45px;
+    }
+    .vsk_root .header_102 .icon_book_102 {
+        bottom: 33%;
+        width: 50px;
+    }
+    .vsk_root .header_102 .icon_round_102 {
+        left: -35%;
+    }
+    .vsk_root .header_102 .icon_bubbles_102 {
+        width: 30px;
+        top: 57%;
+    }
+    .vsk_root .special_program_102 .future_102 .future_lead_102 h1 {
+        font-size: 2rem;
+    }
+    .vsk_root .special_program_102 .future_102 .future_lead_102 .lead_102 {
+        font-size: 2rem;
+    }
+    .vsk_root .special_program_102 .future_102 .earth_102 {
+        left: 55%;
+    }
+    .vsk_root .special_program_102 .future_card_102 .card_content_102 video {
+        width: 300px;
+    }
+    .vsk_root .potential_102 .potential_mercury_102 {
+        right: 42%;
+    }
+    section {
+     padding-bottom: 0;
+    }
+    .vsk_root .special_program_102 .future_card_102 .card_content_102 .virtual_102 h1 {
+        width: 300px;
+    }
+}
   /* @media only screen and (max-width: 900px){
     .vsk_root .binders_102{
         display: none;
