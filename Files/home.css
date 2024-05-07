@@ -76,11 +76,6 @@ a{
 }
 h1{
     font-size: 5rem;
-    /* text-shadow: 
-        -1px -1px 0 #fff,  
-        1px -1px 0 #fff,
-        -1px 1px 0 #fff,
-        1px 1px 0 #fff; Outline color */
 }
 section{
     max-width: 100vw;
@@ -91,8 +86,6 @@ section{
 }
 .vsk_root .btn_102{
     padding: 1rem 2.3rem;
-    /* background-color: var(--color-primary); */
-    /* background-color: #8C52FF; */
     background-color: #102542;
     color: var(--color-white);
     font-weight: 500;
@@ -101,9 +94,7 @@ section{
 }
 .vsk_root .btn_102:hover{
     background-color: white;
-    /* color: #8C52FF; */
     color: #102542;
-    /* border: 1px solid #8C52FF; */
     border: 1px solid #102542;
 }
 
@@ -223,7 +214,6 @@ nav button{
     font-size: 9rem;
     letter-spacing: px;
     color: #FF7A0D;
-    /* color: var(--color-lead); */
 }
 .vsk_root .header_102 .text .text-shadow_102{
     color: #2F2D52;
@@ -367,12 +357,10 @@ nav button{
     background-color: var(--color-lead);
 }
 .vsk_root .special_program_102 .course_container_102 .courses.secondary{
-    /* background-color: rgb(15, 140, 235); */
-     background-color: #8C52FF;
+    background-color: #8C52FF;
     color: var(--color-white);
 }
 .vsk_root .special_program_102 .course_container_102 .courses.tertiary{
-    /* background-color: rgb(255, 192, 192); */
     background-color: #00EBED;
 }
 .vsk_root .special_program_102 .course_container_102 .courses:hover{
@@ -426,11 +414,6 @@ nav button{
     position: relative;
     padding: 2rem;
 }
-
-
-.vsk_root .special_program_102 .future_102 .future_lead_102{
-    
-}
 .vsk_root .special_program_102 .future_102 .future_lead_102 h1{
     font-size: 7rem;
     padding-bottom: 0;
@@ -475,7 +458,6 @@ nav button{
 .vsk_root .special_program_102 .future_card_102{
     margin-top: 5rem;
     background-color: var(--color-lead);
-    /* padding: 2rem; */
     font-family: 'poppins';
     border-radius: 20px;
     color: white;
@@ -506,13 +488,12 @@ nav button{
     justify-content: space-between;
 }
 .vsk_root .special_program_102 .future_card_102 .card_header_102 .header_lead_102{
-    width: 33.33%; /* Set width for each div (33.33% for three columns with 10px space between them) */
+    width: 33.33%; 
     padding: 1rem;
-    text-align: center; /* Center align content */
+    text-align: center;
 }
 .vsk_root .special_program_102 .future_card_102 .card_header_102 .header_lead_102:nth-child(2){
     background-color: #8C52FF;
-    /* border-top-right-radius: 10px; */
 }
 .vsk_root .special_program_102 .future_card_102 .card_header_102 .header_lead_102:nth-child(3){
     background-color: #00EBED;
@@ -528,7 +509,6 @@ nav button{
 }
 .vsk_root .special_program_102 .future_card_102 .card_content_102 .virtual_102 h1{
     margin-bottom: 2rem;
-    /* width: 600px; */
     overflow-wrap: break-word;
 }
 .vsk_root .special_program_102 .future_card_102 .card_content_102 .virtual_102 p{
@@ -553,7 +533,6 @@ nav button{
 .vsk_root .special_program_102 .payment_plan_102 .payment_cards_102{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* gap: 1rem; */
     place-items: center;
     font-family: 'poppins';
 }
@@ -577,14 +556,12 @@ nav button{
 .vsk_root .special_program_102 .payment_plan_102 .payment_cards_102 .payment_card_102 span{
     font-size: 1rem;
     text-align: center;
-    /* color: #102542a0; */
 }
 .vsk_root .special_program_102 .payment_plan_102 .payment_cards_102 .payment_card_102 .payment_card_content .payment_card_text_102{
     display: flex;
     align-items: center;
     gap: .5rem;
     margin-bottom: 1rem;
-    /* padding: 1rem; */
 }
 .vsk_root .special_program_102 .payment_plan_102 .payment_cards_102 .payment_card_102 .payment_card_content .payment_card_text_102 ion-icon{
     font-size: 1rem;
@@ -618,7 +595,6 @@ nav button{
     margin-top: 1rem;
     padding: 2rem;
     color: white;
-    /* background-color: var(--color-white); */
     background-color: var(--color-dark);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -754,7 +730,7 @@ nav button{
       transform: rotate(0deg);
     }
     to {
-      transform: rotate(360deg); /* Rotate the image 360 degrees */
+      transform: rotate(360deg);
     }
   }
 
@@ -992,14 +968,10 @@ nav button{
     .vsk_root .header_102 .header_second_102 .header_second_start_102 h1{
         font-size: 6rem;
     }
-    .vsk_root .special_program_102{
-        /* display: none; */
-    }
     .vsk_root .special_program_102 .special_program_container_102{
         display: none;
     }
     .vsk_root .special_program_102 .future_102 .earth_102{
-        /* width: 300px; */
         left: 65%;
         top: 10%;
     }
@@ -1015,15 +987,12 @@ nav button{
     .vsk_root .future_102 .future_lead_2_102 h1{
         font-size: 6rem;
     }
-    
-      /*special  program*/
-      .vsk_root .future_102 .earth_102{
+    .vsk_root .future_102 .earth_102{
         width: 150px;
         left: 75%;
         top: 15%;
     }
-      /*special  program*/
-      .vsk_root  .special_program_102 .future_card_102 .card_content_102 video{
+    .vsk_root  .special_program_102 .future_card_102 .card_content_102 video{
         width: 600px;
     }
   }
@@ -1270,38 +1239,4 @@ nav button{
         width: 300px;
     }
 }
-  /* @media only screen and (max-width: 900px){
-    .vsk_root .binders_102{
-        display: none;
-    }
-    .vsk_root .binders_2_102{
-        display: none;
-    }
-    .vsk_root .future_102 .future_lead_102 h1{
-        font-size: 4rem;
-    }
-    .vsk_root .future_102 .future_lead_102 h2{
-        font-size: 2rem;
-    }
-    .vsk_root .future_102 .future_lead_2_102 h1{
-        font-size: 4rem;
-    }
-    .vsk_root .future_102 .earth_102{
-        left: 55%;
-        top: 10%;
-    }
-    .vsk_root .future_card_102{
-        margin-top: 2rem;
-    }
-    section{
-        padding-bottom: 0;
-    }
-    .vsk_root .future_card_102 .card_content_102 video{
-        width: 600px;
-  }
-  .vsk_root .footer_container_102 .footer_content_102{
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 0;
-  }
-  } */
+
